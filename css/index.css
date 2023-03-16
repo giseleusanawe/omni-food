@@ -15,7 +15,8 @@ body{
     height: 10vh;
     display: flex;
     justify-content: space-between;
-
+    position: fixed;
+    z-index: 1;
 }
 .nav-bar ul{
     display: flex;
@@ -109,4 +110,40 @@ button{
 }
 .img-three{
     margin-right: 10%;
+}
+#product{
+width: 100%;
+height: 70vh;
+background-color:white;
+display: flex;
+}
+.product-detail{
+width: 25%;
+height: 70vh;
+border-radius: 20px;
+margin-left: 10px;
+background-color: rgb(243, 201, 208);
+padding: 10px;
+}
+.product-detail :hover{
+transform: translateY(2px)
+
+}
+.product-detail h2{
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold
+}
+.product-detail img{
+  padding-left: ;  
+}
+.product-detail p {
+
+}
+#btn{
+margin: 10px;
+}
+#btn :hover{
+cursor: pointer;
+background-color: white;
 }
