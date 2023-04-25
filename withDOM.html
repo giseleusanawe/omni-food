@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Dom</title>
+  </head>
+  <body>
+    <h1>this is heading one</h1>
+    <h1 id="headingOne">this is heading one</h1>
+    <h1>this is heading one</h1>
+    <h1>this is heading one</h1>
+    <h1>this is heading one</h1>
+    <h1>this is heading one</h1>
+    <p></p>
+    <button
+      onclick="document.getElementById('headingOne').style.color = 'lightgreen' "
+    >
+      change color
+    </button>
+    <p>products which are available</p>
+    <ul style="display: none" id="products">
+      <li>pr1</li>
+      <li>pr2</li>
+      <li>pr3</li>
+    </ul>
+    <button onclick="document.getElementById('products').style.display='block'">
+      view details
+    </button>
+    <script>
+      let testHeading = document.getElementsByTagName("h1");
+      testHeading[0].innerHTML = "test heading";
+      testHeading[0].style.color = "red";
+      document.getElementsByTagName("p")[0].innerHTML = "jhgfd";
+    </script>
+  </body>
+</html>
